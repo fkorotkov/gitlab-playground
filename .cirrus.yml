@@ -1,5 +1,6 @@
 task:
   name: Test Again
+  only_if: $CIRRUS_BRANCH == 'master'
   container:
     image: alpine:latest
   env_script: printenv
